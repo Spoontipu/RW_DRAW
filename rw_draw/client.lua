@@ -182,6 +182,7 @@ function Remove(texname)
             DestroyDui(duiobj)
             REGISTRY[i] = nil
             clmsg("POSTER DELETED ID:"..name)
+	    TriggerServerEvent('rw_draw:GetData')
         end
     end
 end
